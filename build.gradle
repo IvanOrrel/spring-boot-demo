@@ -1,0 +1,47 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'java'
+}
+
+group = 'com.peerlender'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.3.4.RELEASE', ext: 'pom'
+
+	implementation group: 'org.springframework.boot', name: 'spring-boot-actuator', version: '2.3.4.RELEASE'
+
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.4.RELEASE'
+
+	implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '7.4.1.jre8'
+
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.3.4.RELEASE'
+
+	implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.10.Final'
+
+	implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.4.10.Final'
+
+	//implementation group: 'org.hibernate.javax.persistence', name: 'hibernate-jpa-2.0-api', version: '1.0.1.Final'
+
+	implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.0.16.Final'
+
+	implementation group: 'javax.transaction', name: 'jta', version: '1.1'
+
+	implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.3.5'
+
+	implementation group: 'org.springframework', name: 'spring-orm', version: '5.3.5'
+
+
+
+
+}
+
+test {
+	useJUnitPlatform()
+}
